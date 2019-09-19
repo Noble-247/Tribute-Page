@@ -1,0 +1,164 @@
+/*==================== GLOBAL STYLES ====================*/
+
+:root {
+    --primary-background-color: rgb(222, 236, 241);
+    --primary-text-color: navy;
+    --secondary-text-color: white;
+    --secondary-background-color: white;
+    --visited-link-color: gray;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    color: var(--primary-text-color);
+}
+
+main {
+    background-color: var(--primary-background-color);
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+
+/*==================== TITLE/IMAGE STYLES ====================*/
+
+h1#title {
+    margin: 20px auto 0px auto;
+    padding: 40px;
+    text-align: center;
+    line-height: 0em;
+    letter-spacing: 5px;
+}
+
+h1+p {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-top: 0px;
+}
+
+figure {
+    background-color: var(--secondary-background-color);
+    padding: 15px;
+    margin: 0px;
+}
+
+div#img-div {
+    width: 80%;
+    margin: 10px auto 10px auto;
+    background: var(--secondary-background-color);
+    border-radius: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+figcaption#img-caption {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*==================== MAIN DOCUMENT STYLES ====================*/
+
+article#tribute-info {
+    width: 80%;
+    margin: 0 auto;
+    background: var(--secondary-background-color);
+    color: var(--primary-text-color);
+    padding: 20px;
+    line-height: 1.7em
+}
+
+ul li {
+    list-style: disc;
+    margin-bottom: 20px;
+}
+
+h3#more-info {
+    background: var(--secondary-background-color);
+    color: var(--primary-text-color);
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+
+/*==================== LINK STYLES ====================*/
+
+a {
+    text-decoration: underline;
+    display: inline-block;
+    background: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    padding: 10px
+}
+
+a:hover {
+    background: var(--primary-text-color);
+    color: var(--primary-background-color);
+}
+
+a:visited {
+    color: var(--visited-link-color);
+}
+
+
+/*==================== TIMELINE DATE STYLES ====================*/
+
+strong {
+    display: inline-block;
+    background: var(--primary-text-color);
+    padding: 5px;
+    border-radius: 100%;
+    color: var(--secondary-text-color);
+}
+
+
+/*==================== RESPONSIVE STYLES ====================*/
+
+@media screen and (max-width: 800px) {
+    article#tribute-info {
+        width: 90%;
+    }
+    div.title {
+        width: 95%;
+    }
+    div.image {
+        width: 95%;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
